@@ -1,0 +1,14 @@
+--------------------------------
+- start with a repository
+--------------------------------
+git init
+
+
+git status
+git add .
+git status
+git commit -m "[something]"
+git push -u origin develop
+
+git tag -a v0.X -m "[something]"
+git push origin --tags

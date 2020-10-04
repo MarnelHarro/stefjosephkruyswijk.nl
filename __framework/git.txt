@@ -1,0 +1,20 @@
+--------------------------------
+- start with a repository
+--------------------------------
+git init
+
+--------------------------------
+- commit and push changes
+--------------------------------
+git status
+git add .
+git status
+git commit -m "[something]"
+git push -u origin [branch]
+
+--------------------------------
+- create and push tag
+--------------------------------
+git tag -a v0.X -m "[something]"
+git push origin --tags
+
