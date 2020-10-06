@@ -1,11 +1,7 @@
-CREATE TABLE IF NOT EXISTS `webpage` (
-  `domain` varchar(63) NOT NULL,
-  `pathandfile` varchar(150) NOT NULL,
-  `title` varchar(100) NOT NULL,
-  `timestamp` int(10) unsigned NOT NULL,
-  `added` int(10) unsigned NOT NULL,
-  `keywords` text NOT NULL,
-  `status` tinyint(4) NOT NULL,
-  PRIMARY KEY (`domain`,`pathandfile`),
-  UNIQUE KEY `domain` (`domain`,`pathandfile`)
+CREATE TABLE IF NOT EXISTS `example` (
+  `string` varchar(255) NOT NULL,
+  `integer` int(16) unsigned NOT NULL,
+  `text` text NOT NULL,
+  PRIMARY KEY (`string`,`integer`),
+  UNIQUE KEY `domain` (`integer`,`text`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

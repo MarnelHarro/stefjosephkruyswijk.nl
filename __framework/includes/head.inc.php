@@ -25,16 +25,17 @@
 
 			}
 		
-		?>
-
-		<style>
+		?><style>
 
 			<?php 
 
-				include DOCUMENT_ROOT . '__framework/css/css.css';
+				echo FUNCTIONS::minimize(file_get_contents(DOCUMENT_ROOT . '__framework/css/' . $template . '.css'));
+				echo FUNCTIONS::minimize(file_get_contents(DOCUMENT_ROOT . 'css/css.css'));
 
 			?>
+
 
 		</style>
 
 	</head>
+

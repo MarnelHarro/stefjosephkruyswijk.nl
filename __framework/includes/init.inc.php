@@ -48,15 +48,16 @@
     if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
         $browserLanguage = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     }
-
-    include FRAMEWORK_DIRECTORY . 'class/includes.inc.php';
-
+    
     // responding to the search
     $searchQuery = "";
 
     if (isset($_GET["q"]) && strlen(trim($_GET["q"]))) {
         $searchQuery = trim($_GET["q"]);
     }	
+
+    include FRAMEWORK_DIRECTORY . 'class/includes.inc.php';
+    include DOCUMENT_ROOT . '__template/includes.inc.php';
 
     // set the start time for the rest of the webpage
     define("STARTTIME", microtime());
