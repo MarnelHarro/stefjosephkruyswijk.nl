@@ -4,6 +4,11 @@
 git init
 
 --------------------------------
+- start with a from github
+--------------------------------
+git clone https://github.com/[name]/[project].git
+
+--------------------------------
 - commit and push changes
 --------------------------------
 git status

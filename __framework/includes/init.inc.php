@@ -57,7 +57,6 @@
     }	
 
     include FRAMEWORK_DIRECTORY . 'class/includes.inc.php';
-    include DOCUMENT_ROOT . '__template/includes.inc.php';
 
     // set the start time for the rest of the webpage
     define("STARTTIME", microtime());
