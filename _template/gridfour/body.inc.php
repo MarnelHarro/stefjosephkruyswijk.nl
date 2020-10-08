@@ -55,7 +55,7 @@
                             echo "<a href='" . $key . "'>$header</a>";
                         }
 
-                        include "template_gridfour_c$columnIndex.inc.php";
+                        include "_template_gridfour/template_gridfour_column_$columnIndex.inc.php";
 
                         echo "</div>";
 
