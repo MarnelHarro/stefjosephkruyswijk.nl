@@ -8,6 +8,7 @@
     $htmlLanguage = "en";
     $showErrors = true;
     $title = "Prototype";
+    $useDefaultLayout = true;
 
     if (isset($settings["allrightsreserved"])) {
         $copyright_allRightsReserved = $settings["allrightsreserved"];
@@ -32,6 +33,9 @@
     }
     if (isset($settings["year"])) {
         $copyright_year = $settings["year"];
+    }
+    if (isset($settings["usedefaultlayout"])) {
+        $useDefaultLayout = $settings["usedefaultlayout"];
     }
 
 ?>

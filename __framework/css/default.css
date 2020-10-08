@@ -1,1 +1,94 @@
-body{background-color:#C4CBDC;font-family:verdana;padding:15px;color:#061539}#container{margin:0 auto;width:90%}#errormessage{background-color:red;color:#fff;display:none;margin:5px 0;padding:15px}button,input[type=button],[type=reset],input[type=search],input[type=submit],input[type=text]{border:1px solid #000;color:#061539;font-family:verdana;font-size:1.25em;padding:0.5em;}input::placeholder{color:#C4CBDC;}a{color:#061539;text-decoration:none}a:visited{color:#061539;}footer{text-align:center; margin: 2em 0em;}
+:root {
+    --bgc: #FDFDFE;
+}
+
+body {
+    background-color: var(--bgc);
+    font-family:verdana;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin: 0;
+    color:#061539
+}
+
+a {
+    color:#061539;
+    text-decoration:none
+}
+
+header {
+    font-size: 2.5em;
+    padding: 40px 20px 20px 20px;
+}
+
+header span#subheader {
+    font-size: 0.65em;
+    font-weight: normal;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    background-color: #061539;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    padding: 14px 16px;
+}
+
+.menuitem, .active {
+    float: left;
+}
+
+.menuitem a, .active a {
+    color: var(--bgc);
+    display: block;
+}
+
+.active a {
+    background-color: #67779E;
+    color: var(--bgc);
+    display: block;
+}
+
+.menuitem a:hover, .active a:hover {
+    background-color: var(--bgc);
+    color: #061539;
+}
+
+.menuitem a:hover {
+    background-color: var(--bgc);
+    color: #061539;
+}
+
+h1 {
+    font-weight: lighter;
+    margin-left: 20px;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+footer {
+    background-color: #061539;
+    color: var(--bgc);
+    text-align:center; 
+    padding: 1em 0em;
+    margin: 2em 0em;
+}
+
+footer a {
+    color: var(--bgc);
+}
+

@@ -1,6 +1,6 @@
 <?php
 
-    $template = "blog";
+    $template = "empty";
 
     if (isset($templateini["name"])) {
         $template = $templateini["name"];

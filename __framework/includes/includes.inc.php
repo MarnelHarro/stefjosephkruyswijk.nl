@@ -8,7 +8,7 @@
     include 'init.inc.php';
     include DOCUMENT_ROOT . '__includes/includes.inc.php';
     include 'head.inc.php';
-    
+
     $templatesettings = parse_ini_file("template_" . $template . ".ini");
     include DOCUMENT_ROOT . '__template/' . $template . '/body.inc.php';
 

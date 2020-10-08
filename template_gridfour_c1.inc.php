@@ -6,7 +6,7 @@
     $links["/projecten/priemgetallen/"] = "Priemgetallen";
 
     foreach ($links as $key => $value) {
-        echo "<a href='" . $key . "'>$value</a> &nbsp; ";
+        echo "<a href='" . $key . "'>$value</a> ";
     }
 
 ?>    

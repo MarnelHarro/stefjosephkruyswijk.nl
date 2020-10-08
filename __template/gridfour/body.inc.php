@@ -26,10 +26,7 @@
             <?php
                 }
                 else {
-            ?>
-
-            <br />
-
+            ?><br />
             <?php
                 }
             ?>
@@ -64,13 +61,6 @@
 
                         $columnIndex++;
                     }
-
-                    /*
-                foreach ($templatesettings["grid"] as $key => $value) {
-                    echo "<div><h2>" . $key . "</h2>" . $value . "</div>";                        
-                    echo "<div><h2>" . $key . "</h2>" . $value . "</div>";                        
-                }
-                */
 
                 ?>
 

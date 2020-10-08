@@ -29,7 +29,11 @@
 
 			<?php 
 
-				echo FUNCTIONS::minimize(file_get_contents(DOCUMENT_ROOT . '__framework/css/' . $template . '.css'));
+				if ($useDefaultLayout) {
+					echo FUNCTIONS::minimize(file_get_contents(DOCUMENT_ROOT . '__framework/css/default.css'));
+					echo FUNCTIONS::minimize(file_get_contents(DOCUMENT_ROOT . '__framework/css/' . $template . '.css'));
+				}
+
 				echo FUNCTIONS::minimize(file_get_contents(DOCUMENT_ROOT . 'css/css.css'));
 
 			?>

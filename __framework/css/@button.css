@@ -1,0 +1,20 @@
+
+#errormessage {
+    background-color:red;
+    color:#fff;
+    display:none;
+    margin:5px 0;
+    padding:15px
+}
+
+button,input[type=button],[type=reset],input[type=search],input[type=submit],input[type=text] {
+    border:1px solid #000;
+    color:#061539;
+    font-family:verdana;
+    font-size:1.25em;
+    padding:0.5em;
+}
+
+input::placeholder {
+    color:#C4CBDC;
+}
