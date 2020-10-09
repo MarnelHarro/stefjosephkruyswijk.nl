@@ -12,7 +12,7 @@
     $templatesettings = parse_ini_file("_template_$template/template_" . $template . ".ini");
     include DOCUMENT_ROOT . '_template/' . $template . '/body.inc.php';
 
-    if ($settings["showfooter"]) {
+    if ($showFooter) {
         include 'footer.inc.php';
     }    
 

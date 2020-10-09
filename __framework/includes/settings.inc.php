@@ -3,6 +3,7 @@
     $copyright_allRightsReserved = "All rights reserved.";
     $copyright_name = "Stef Joseph-Kruyswijk";
     $copyright_year = 2020;
+    $showFooter = true;
     $defaultTimeZone = "Europe/Amsterdam";
     $googleAnalytics = ""; // UA=123456789-0
     $htmlLanguage = "en";
@@ -19,6 +20,9 @@
     if (isset($settings["defaulttimezone"])) {
         $defaultTimeZone = $settings["defaulttimezone"];
     }
+    if (isset($settings["showfooter"])) {
+        $showFooter = $settings["showfooter"];
+    }
     if (isset($settings["language"])) {
         $htmlLanguage = $settings["language"];
     }
@@ -33,9 +37,6 @@
     }
     if (isset($settings["year"])) {
         $copyright_year = $settings["year"];
-    }
-    if (isset($settings["usedefaultlayout"])) {
-        $useDefaultLayout = $settings["usedefaultlayout"];
     }
 
 ?>

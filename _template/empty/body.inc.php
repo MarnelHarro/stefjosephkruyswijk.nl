@@ -1,40 +1,12 @@
 <body>
-
-    <header>
-        <a href='/'><?php echo $templatesettings["header"]; ?> <span id="subheader"><?php echo $templatesettings["subheader"]; ?><span></a>
-    </header>        
-
-    <nav>
-        <ul>
-        <?php 
-
-            foreach ($templatesettings["menu"] as $key => $value) {
-                $class = "menuitem";
-
-                if ($key == SUBDIRECTORY) {
-                    $class = "active";
-                }
-
-                echo "<li class='" . $class . "'><a href='" . $key . "'>" . $value . "</a></li>";                        
-            }
-        ?>
-
-        </ul>
-    </nav>
-
     <?php
-        if (!empty($templatesettings["title"])) {
+
+    include DOCUMENT_ROOT . '_template/header.inc.php';
+    include DOCUMENT_ROOT . '_template/menu.inc.php';
+    include DOCUMENT_ROOT . '_template/title.inc.php';
+
     ?>
 
-    <h1><?php echo $templatesettings["title"]; ?></h1>
-
-    <?php
-        }
-        else {
-    ?><br />
-    <?php
-        }
-    ?>
 
     <div>
 
@@ -43,5 +15,7 @@
             include "template_empty.inc.php";
 
         ?>
+
+    </div>
         
 </body>

@@ -1,71 +1,45 @@
     <body>
+        <?php
 
-        <main>
-            <header>
-                <a href='/'><?php echo $templatesettings["header"]; ?> <span id="subheader"><?php echo $templatesettings["subheader"]; ?><span></a>
-            </header>        
+            include DOCUMENT_ROOT . '_template/header.inc.php';
+            include DOCUMENT_ROOT . '_template/menu.inc.php';
+            include DOCUMENT_ROOT . '_template/title.inc.php';
 
-            <nav>
-                <ul>
-                <?php 
+        ?>
 
-                    foreach ($templatesettings["menu"] as $key => $value) {
-                        echo "<li class='menuitem'><a href='" . $key . "'>" . $value . "</a></li>";                        
-                    }
-                ?>
+        <div class="displaygrid">
 
-                </ul>
-            </nav>
+            <?php 
 
-            <?php
-                if (!empty($templatesettings["title"])) {
-            ?>
+                $columnIndex = 1;
 
-            <h1><?php echo $templatesettings["title"]; ?></h1>
+                foreach ($templatesettings["grid"] as $key => $value) {
+                    
+                    $class="";
 
-            <?php
-                }
-                else {
-            ?><br />
-            <?php
-                }
-            ?>
-
-            <div class="displaygrid">
-
-                <?php 
-
-                    $columnIndex = 1;
-
-                    foreach ($templatesettings["grid"] as $key => $value) {
-                        
-                        $class="";
-
-                        if ($columnIndex < 4) {
-                            $class=" class='verticalline'";
-                        }
-
-                        echo "<div$class>";
-                        
-                        $header = "<h2>$value</h2>"; 
-                        if (empty($key) || is_int($key)) {
-                            echo $header;
-                        }
-                        else {
-                            echo "<a href='" . $key . "'>$header</a>";
-                        }
-
-                        include "_template_gridfour/template_gridfour_column_$columnIndex.inc.php";
-
-                        echo "</div>";
-
-                        $columnIndex++;
+                    if ($columnIndex < 4) {
+                        $class=" class='verticalline'";
                     }
 
-                ?>
+                    echo "<div$class>";
+                    
+                    $header = "<h2>$value</h2>"; 
+                    if (empty($key) || is_int($key)) {
+                        echo $header;
+                    }
+                    else {
+                        echo "<a href='" . $key . "'>$header</a>";
+                    }
 
-            </div>
+                    include "_template_gridfour/template_gridfour_column_$columnIndex.inc.php";
 
-        </main>    
-        
+                    echo "</div>";
+
+                    $columnIndex++;
+                }
+
+            ?>
+
+        </div>
+
     </body>
