@@ -38,5 +38,8 @@
     if (isset($settings["year"])) {
         $copyright_year = $settings["year"];
     }
-
+    if (isset($settings["usedefault"])) {
+        $useDefaultLayout = $settings["usedefault"];
+    }
+    
 ?>
