@@ -1,6 +1,6 @@
 .displaygrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 3fr 1fr 1fr;
     grid-gap: 10px;
     padding: 0 20px;
 }
@@ -18,17 +18,25 @@
     padding-right: 15px;
 }
 
+button,input[type=button],[type=reset],input[type=search],input[type=submit],input[type=text],input[type=number] {
+    border:1px solid #000;
+    color:#061539;
+    font-family:verdana;
+    font-size:1.1em;
+    padding:0.5em;
+}
+
+input::placeholder {
+    color:#C4CBDC;
+}
+
 @media screen and (max-width: 900px) {
     body {
         font-size: 14px;
     }
     
     .displaygrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    h1, h2 {
-        font-weight: bold;
+        grid-template-columns: 3fr 1fr;
     }
 
     .verticalline:nth-child(2) {
@@ -45,15 +53,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    h1, h2 {
-        font-weight: bolder;
-    }
-
     .verticalline:nth-child(1) {
-        border-right-color: var(--bgc);
-    }
-
-    .verticalline:nth-child(3) {
         border-right-color: var(--bgc);
     }
 }

@@ -1,5 +1,0 @@
-Nog niet beschikbaar
-
-<?php
-
-?>

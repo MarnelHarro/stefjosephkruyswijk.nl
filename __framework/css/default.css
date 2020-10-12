@@ -46,6 +46,15 @@ nav ul li a {
     padding: 14px 16px;
 }
 
+.ul_lst_none {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.ul_lst_none_tab {
+    list-style-type: none;
+}
+
 .menuitem, .active {
     float: left;
 }
@@ -78,6 +87,10 @@ h1 {
 }
 
 h2 {
+    font-weight: lighter;
+}
+
+h3 {
     font-weight: lighter;
 }
 

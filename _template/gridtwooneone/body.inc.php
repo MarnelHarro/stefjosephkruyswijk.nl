@@ -17,13 +17,13 @@
                     
                     $class="";
 
-                    if ($columnIndex < 4) {
+                    if ($columnIndex < 3) {
                         $class=" class='verticalline'";
                     }
 
                     echo "<div$class>";
-                    
-                    if (!empty($value)) {                    
+
+                    if (!empty($value)) {
                         $header = "<h2>$value</h2>"; 
                         if (empty($key) || is_int($key)) {
                             echo $header;
@@ -32,8 +32,8 @@
                             echo "<a href='" . $key . "'>$header</a>";
                         }
                     }
-
-                    include "_template_gridfour/template_gridfour_column_$columnIndex.inc.php";
+                    
+                    include "_template_gridtwooneone/template_gridtwooneone_column_$columnIndex.inc.php";
 
                     echo "</div>";
 

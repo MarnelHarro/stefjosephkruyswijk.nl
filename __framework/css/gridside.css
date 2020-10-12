@@ -1,6 +1,6 @@
 .displaygrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 5fr 2fr;
     grid-gap: 10px;
     padding: 0 20px;
 }
@@ -24,15 +24,16 @@
     }
     
     .displaygrid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 2fr, 1fr;
+    }
+
+    header span#subheader {
+        display: block;
+        padding-top: 15px;
     }
 
     h1, h2 {
         font-weight: bold;
-    }
-
-    .verticalline:nth-child(2) {
-        border-right-color: var(--bgc);
     }
 }
 
@@ -53,7 +54,4 @@
         border-right-color: var(--bgc);
     }
 
-    .verticalline:nth-child(3) {
-        border-right-color: var(--bgc);
-    }
 }
