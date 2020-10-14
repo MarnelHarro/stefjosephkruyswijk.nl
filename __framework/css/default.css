@@ -94,6 +94,10 @@ h3 {
     font-weight: lighter;
 }
 
+.abovefooter {
+    margin-left: 20px;
+}
+
 footer {
     background-color: #061539;
     color: var(--bgc);

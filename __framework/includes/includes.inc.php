@@ -22,6 +22,7 @@
     }
 
     include DOCUMENT_ROOT . '_template/' . $template . '/body.inc.php';
+    include 'abovefooter.inc.php';
 
     if ($showFooter) {
         include 'footer.inc.php';

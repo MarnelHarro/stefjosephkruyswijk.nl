@@ -110,6 +110,40 @@
         }
 
         /**
+         * Get the value from the query string
+         * 
+         * @param string $id the name/id of the querystring
+         * @param string $default the default value 
+         * 
+         * @return string the value the variable will get       
+         */            
+        public static function getPost($id, $default = "") {
+            // set default value
+            $value = $default;
+
+            // if it has some value
+            if (isset($_POST[$id])) {
+                // get value without other spaces
+                $temp = trim($_POST[$id]);
+
+                // check for the integer value
+                if ($temp == 0) {
+                    return 0;
+                }
+
+                // if empty, return the default value
+                if (empty($temp)) {
+                    return $default;
+                }
+
+                // set the value from the query
+                $value = $temp;
+            }            
+
+            return $value;
+        }
+
+        /**
          * Check if the URL is active
          * 
          * @param string $url the url of the website 

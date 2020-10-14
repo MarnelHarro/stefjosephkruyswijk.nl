@@ -1,7 +1,7 @@
 
 <?php
 
-    set_time_limit(3600); 
+    set_time_limit(180); 
 
     $size = FUNCTIONS::getQueryString("size", 0);
 
