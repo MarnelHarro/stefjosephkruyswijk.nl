@@ -92,8 +92,12 @@
                 // get value without other spaces
                 $temp = trim($_GET[$id]);
 
+                if (!empty($temp)) {
+                    return $temp;
+                }
+
                 // check for the integer value
-                if ($temp == 0) {
+                if ($temp === 0) {
                     return 0;
                 }
 

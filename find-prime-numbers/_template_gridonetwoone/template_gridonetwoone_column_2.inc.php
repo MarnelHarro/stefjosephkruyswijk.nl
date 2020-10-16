@@ -1,115 +1,197 @@
 
+<script>
+
+    setTimeout(() => {
+        location.reload();
+    }, 1000 * 60 * 16);
+
+</script>
+
 <?php
 
-    set_time_limit(180); 
+    set_time_limit(900); 
 
-    $size = FUNCTIONS::getQueryString("size", 0);
+    define("BYTE", 256);
+    define("CORRECTION", 3);
+    define("TABLE", "prime_byte_");
 
-    if ($size == 4) {
-        $query = "select number from prime_int4";
+    define("BALANCED", "bal");
 
-        $list = Data::executeSelectQuery($query);
+    function getPrimeArray($byteSize = 1) {
+        switch ($byteSize) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                $query = "select number from " . TABLE . $byteSize;
+                $numberArray = Data::executeSelectQuery($query);        
 
-        $count = sizeof($list);
+                $array = array();
 
-        $max = $list[$count - 1]["number"];
+                foreach ($numberArray as $item) {
+                    array_push($array, $item["number"]);
+                }
 
-        while ($max <= pow(2, 8) - 2) {
-            $max += 2;
+                return $array;
+            default:
+                return array();
+        }
+    }
 
+    function addNumber($byte, $number) {
+        $query = "insert into " . TABLE . "$byte (number) values ($number)";
+        Data::executeQuery($query);
+    }
+
+    function updateNumber($byte, $number, $status) {
+        $query = "select status from " . TABLE . $byte . " where number=$number";
+        $statusArray = Data::executeSelectQuery($query);
+        $currentStatus = "";
+
+        foreach ($statusArray as $item) {
+            $currentStatus = $item["status"];
+        }
+
+        $currentStatus = str_replace(" " . $status, "", $currentStatus);
+        $currentStatus .= " " . $status;
+
+        $query = "update " . TABLE . $byte . " set status='$currentStatus' where number=$number";
+        Data::executeQuery($query);
+    }
+
+    $byte = 0;
+    $primeType = FUNCTIONS::getQueryString("type");
+
+    if (!empty($primeType)) {
+        switch ($primeType) {
+            case "balanced":
+                $list = getPrimeArray(1);
+                $count = sizeof($list);
+
+                for ($index=1; $index < $count - 1; $index++) {
+                    $previous = $list[$index - 1];
+                    $next = $list[$index + 1];
+                    $average = ($previous + $next)/2;
+
+                    echo "<br />" . $list[$index];
+
+                    if ($average == $list[$index]) {
+                        updateNumber(1, $list[$index], BALANCED);
+                        echo " - Balanced";
+                    }
+                }
+
+                break;
+        }
+    }
+
+    $byte = FUNCTIONS::getQueryString("byte");
+
+    $maxNumber = pow(BYTE, $byte) - CORRECTION;
+
+    if ($byte == 1) {
+        $list = [2, 3, 5, 7, 11, 13, 17];
+
+        foreach ($list as $item) {
+            addNumber($byte, $item);
+        }
+
+        $index = 19;
+
+        while ($index <= $maxNumber) {
             $isPrime = true;
 
-            foreach ($list as $item) {
+            echo "<br />" . $index;
 
-                $number = $item["number"];
-                if ($max % $number == 0) {
+            foreach ($list as $item) {
+                if ($index % $item == 0) {
                     $isPrime = false;
+                    break;
                 }
             }
 
             if ($isPrime) {
-                $query = "insert into prime_int4 values ($max)";
-                Data::executeQuery($query);
+                echo " - $isPrime";
+
+                addNumber($byte, $index);
             }
+    
+            $index += 2;
         }
     }
-    else if ($size == 8) {
-        $table = $size / 2;
-        $query = "select number from prime_int$table";
-        $list = Data::executeSelectQuery($query);
+    else if ($byte == 2) {
+        $list = getPrimeArray(1);
+        $index = pow(BYTE, $byte - 1) + 1;
 
-        $query = "select max(number) as number from prime_int" . ($size / 2);
+        while ($index <= $maxNumber) {
+            $isPrime = true;
 
+            echo "<br />" . $index;
+
+            foreach ($list as $item) {
+                if ($index % $item == 0) {
+                    $isPrime = false;
+                    break;
+                }
+            }
+
+            if ($isPrime) {
+                echo " - $isPrime";
+
+                addNumber($byte, $index);
+            }
+    
+            $index += 2;
+        }        
+    }
+    else if ($byte == 3) {
+        $list_1 = getPrimeArray(1);
+        $index = pow(BYTE, $byte - 1) + 1;
+
+        $query = "select max(number) as number from " . TABLE . $byte;
         $maxValue = Data::executeSelectQuery($query);
 
         if ($maxValue[0]["number"]) {
-            $maxValue = $maxValue[0]["number"];
-        }
-        else {
-            $maxValue = pow(2, $size) - 1;
+            $index = $maxValue[0]["number"] + 2;
         }
 
-        while ($maxValue <= pow(2, $size * 2) - 2) {
-            $maxValue += 2;
-
+        $sqrtValue = ceil(sqrt($index));
+        
+        while ($index <= $maxNumber) {
             $isPrime = true;
 
-            foreach ($list as $item) {
-                $number = $item["number"];
-                if ($maxValue % $number == 0) {
+            echo "<br />" . $index;
+
+            foreach ($list_1 as $item) {
+                if ($index % $item == 0) {
                     $isPrime = false;
+                    break;
                 }
             }
 
             if ($isPrime) {
-                $query = "insert into prime_int$size values ($maxValue)";
-                Data::executeQuery($query);
+                $list_2 = getPrimeArray(2);
 
-                echo "<br />-- $maxValue";
-            }
-        }
-    }
-    else if ($size == 16) {
-        $table = $size / 2; // 8
-        $query = "select number from prime_int$table";
-        $list_1 = Data::executeSelectQuery($query);
+                foreach ($list_2 as $item) {
+                    if ($item > $sqrtValue) {
+                        break;
+                    }
 
-        $table = $table / 2; // 4
-        $query = "select number from prime_int$table";
-        $list_2 = Data::executeSelectQuery($query);
+                    if ($index % $item == 0) {
+                        $isPrime = false;
+                        break;
+                    }
+                }        
 
-        $list = array_merge($list_2, $list_1);
+                if ($isPrime) {
+                    echo " - $isPrime";
 
-        $query = "select max(number) as number from prime_int$size";
-
-        $maxValue = Data::executeSelectQuery($query);
-
-        if ($maxValue[0]["number"]) {
-            $maxValue = $maxValue[0]["number"];
-        }
-        else {
-            $maxValue = pow(2, $size) - 1;
-        }
-
-        while ($maxValue <= pow(2, $size * 2) - 2) {
-            $maxValue += 2;
-
-            $isPrime = true;
-
-            foreach ($list as $item) {
-                $number = $item["number"];
-                if ($maxValue % $number == 0) {
-                    $isPrime = false;
+                    addNumber($byte, $index);
                 }
             }
-
-            if ($isPrime) {
-                $query = "insert into prime_int$size values ($maxValue)";
-                Data::executeQuery($query);
-
-                echo "<br />-- $maxValue";
-            }
-        }
+    
+            $index += 2;
+        }        
     }
 
 ?>

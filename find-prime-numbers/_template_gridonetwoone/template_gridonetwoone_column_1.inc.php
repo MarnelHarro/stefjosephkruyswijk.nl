@@ -3,10 +3,14 @@
     // this information will NOT be used when the page is smaller than 550px
     $links = array();
 
-    $links["./?size=4"] = "INT4";
-    $links["./?size=8"] = "INT8";
-    $links["./?size=16"] = "INT16";
-    $links["./?size=32"] = "INT32";
+    $links["./?byte=1"] = "BYTE 1";
+    $links["./?byte=2"] = "BYTE 2";
+    $links["./?byte=3"] = "BYTE 3";
+    $links["./?byte=4"] = "BYTE 4";
+
+    $links["#"] = "&nbsp;";
+
+    $links["./?type=balanced"] = "Balanced";
 
     echo "<h3>Bookmarks</h3>";
 
