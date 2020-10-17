@@ -12,7 +12,7 @@
 
         <?php
 
-            include "template_empty.inc.php";
+            include "_template_empty/template_empty.inc.php";
 
         ?>
 

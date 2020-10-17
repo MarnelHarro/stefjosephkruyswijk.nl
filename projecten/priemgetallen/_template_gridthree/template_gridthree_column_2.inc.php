@@ -4,14 +4,14 @@
 
     if ($isPrime) {
         $byte = 1;
-        if ($number < 256 * 256 * 256) {
-            $byte = 3;
+        if ($number < BYTE) {
+            $byte = 1;
         }
-        if ($number < 256 * 256) {
+        else if ($number < BYTE * BYTE) {
             $byte = 2;
         }
-        if ($number < 256) {
-            $byte = 1;
+        else if ($number < BYTE * BYTE * BYTE) {
+            $byte = 3;
         }
         
         $query = "select status from prime_byte_" . $byte . " where number=$number";

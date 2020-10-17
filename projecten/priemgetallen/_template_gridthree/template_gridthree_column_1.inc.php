@@ -4,18 +4,18 @@
     $isPrime = null;
 
     if ($number > 0) {
-        if ($number <= 256) {
-            $table = "4";
+        $byte = 1;
+        if ($number < BYTE) {
+            $byte = 1;
         }
-        else if ($number <= 256 * 256) {
-            $table = "8";
+        else if ($number < BYTE * BYTE) {
+            $byte = 2;
         }
-        else if ($number <= 256 * 256 * 256) {
-            $table = "16";
+        else if ($number < BYTE * BYTE * BYTE) {
+            $byte = 3;
         }
-
-        $query = "select number from prime_int$table where number=$number";
-
+        
+        $query = "select number from prime_byte_" . $byte . " where number=$number";
         $rows = Data::executeSelectQuery($query);
 
         $isPrime = sizeof($rows) ? true : false;

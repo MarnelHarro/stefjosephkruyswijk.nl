@@ -5,7 +5,7 @@
 
     define("DOCUMENT_ROOT", strtolower($_SERVER["DOCUMENT_ROOT"]) . "/");
     define("FRAMEWORK_DIRECTORY", DOCUMENT_ROOT . "__framework/");
-    define("TABLE_DIRECTORY", DOCUMENT_ROOT . "__table/");
+    define("TABLE_DIRECTORY", DOCUMENT_ROOT . "_table/");
     define("ERROR_LOG_DIRECTORY", DOCUMENT_ROOT . "__error/" . date("Y") . "/" . date("m") . "/" . date("d") . "/");
     define("SESSION_DIRECTORY", DOCUMENT_ROOT . "__session/");
     define("ISLOCALHOST", $_SERVER['SERVER_NAME'] == "localhost");
