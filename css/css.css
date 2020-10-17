@@ -3,6 +3,14 @@
     top: 100px;
 }
 
+.primedialog a {
+    text-decoration: underline;
+}
+
+.primedialog a:hover {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1275px) {
     body {
         font-size: 0.9em;

@@ -11,6 +11,7 @@
     $links["#"] = "&nbsp;";
 
     $links["./?type=balanced"] = "Balanced";
+    $links["./?type=chen"] = "Chen";
 
     echo "<h3>Bookmarks</h3>";
 

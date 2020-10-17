@@ -5,7 +5,7 @@
     include 'settings.inc.php';    
     include 'template.inc.php';   
     include 'init.inc.php';
-    include DOCUMENT_ROOT . '__includes/includes.inc.php';
+    include DOCUMENT_ROOT . '_includes/includes.inc.php';
     include 'head.inc.php';
 
     $homesettings = parse_ini_file(DOCUMENT_ROOT . "_template_home.ini");

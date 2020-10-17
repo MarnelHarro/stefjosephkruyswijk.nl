@@ -11,11 +11,33 @@
 
     set_time_limit(900); 
 
-    define("BYTE", 256);
-    define("CORRECTION", 3);
-    define("TABLE", "prime_byte_");
+    function getFactors($number) {
+        $array = array();
 
-    define("BALANCED", "bal");
+        for ($index=2; $index <= floor($number / 2); $index++) {
+            if ($number % $index == 0) {
+                array_push($array, $index);
+            }
+        }
+
+        return $array;
+    }
+
+    function getPrimeFactors($number) {
+        $list = getPrimeArray(1);
+        $array = array();
+
+        foreach ($list as $item) {
+            if ($item >= $number) {
+                break;
+            }
+            if ($number % $item == 0) {
+                array_push($array, $item);
+            }
+        }
+
+        return $array;
+    }
 
     function getPrimeArray($byteSize = 1) {
         switch ($byteSize) {
@@ -36,6 +58,27 @@
             default:
                 return array();
         }
+    }
+
+    function isPrime($number) {
+        $byte = 0;
+        if ($number < BYTE) {
+            $byte = 1;
+        }
+        else if ($number < BYTE * BYTE) {
+            $byte = 2;
+        }
+        else if ($number < BYTE * BYTE * BYTE) {
+            $byte = 3;
+        }
+        else if ($number < BYTE * BYTE * BYTE * BYTE) {
+            $byte = 4;
+        }
+
+        $query = "select number from " . TABLE . $byte . " where number=$number";
+        $array = Data::executeSelectQuery($query);
+
+        return !empty($array);
     }
 
     function addNumber($byte, $number) {
@@ -82,7 +125,36 @@
                 }
 
                 break;
-        }
+            case "chen":
+                $list = getPrimeArray(1);
+
+                foreach ($list as $item) {
+                    $next = $item + 2;
+                    
+                    $isChenPrime = true;
+                    
+                    if (!isPrime($next)) {
+                        $factors = getFactors($next);
+
+                        foreach ($factors as $factor) {
+                            if (!isPrime($factor)) {
+                                $isChenPrime = false;
+
+                                break;
+                            }
+                        }    
+                    }
+
+                    echo "<br />" . $item;
+                    
+                    if ($isChenPrime) {
+                        updateNumber(1, $item, CHEN);
+                        echo " - Chen";
+                    }
+                }
+
+                break;
+            }
     }
 
     $byte = FUNCTIONS::getQueryString("byte");

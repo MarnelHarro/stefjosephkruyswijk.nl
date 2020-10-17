@@ -31,9 +31,11 @@
             $array = array_filter($array);
 
             foreach ($array as $item) {
-                if ($item === "bal") {
+                if ($item === BALANCED) {
                     echo "<a href=javascript:showDialog('balancedDialog');>Balanced</a> ";
-                    
+                }
+                if ($item === CHEN) {
+                    echo "<a href=javascript:showDialog('chenDialog');>Chen</a> ";
                 }
             }
         }
