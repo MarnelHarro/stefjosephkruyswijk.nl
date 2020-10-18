@@ -223,6 +223,8 @@
         $query = "select max(number) as number from " . TABLE . $byte;
         $maxValue = Data::executeSelectQuery($query);
 
+        print_r($maxValue);
+
         if ($maxValue[0]["number"]) {
             $index = $maxValue[0]["number"] + 2;
         }

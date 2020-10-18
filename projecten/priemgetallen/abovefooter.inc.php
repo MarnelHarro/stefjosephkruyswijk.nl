@@ -1,3 +1,8 @@
+<?php
+
+    if (false) {
+
+?>
 
         <div class="abovefooter">
             <br />
@@ -46,3 +51,11 @@
             document.querySelector('#' + id).showModal();
         }
     </script>
+
+<?php 
+
+    }
+
+?>
+
+</body>

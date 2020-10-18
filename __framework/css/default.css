@@ -98,6 +98,14 @@ h3 {
     margin-left: 20px;
 }
 
+.abovefooter a {
+    text-decoration: underline;
+}
+
+.abovefooter a:hover {
+    text-decoration: none;
+}
+
 footer {
     background-color: #061539;
     color: var(--bgc);
