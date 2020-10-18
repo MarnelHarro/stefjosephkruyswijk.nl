@@ -1,5 +1,6 @@
 :root {
     --bgc: #FDFDFE;
+    --color: #061539;
 }
 
 body {
@@ -8,12 +9,12 @@ body {
     font-size: 16px;
     line-height: 1.4em;
     margin: 0;
-    color:#061539
+    color:var(--color);
 }
 
 a {
-    color:#061539;
-    text-decoration:none
+    color: var(--color);
+    text-decoration: none
 }
 
 header {
@@ -31,7 +32,7 @@ nav {
 }
 
 nav ul {
-    background-color: #061539;
+    background-color: var(--color);
     list-style-type: none;
     margin: 0;
     padding-left: 20px;
@@ -72,12 +73,12 @@ nav ul li a {
 
 .menuitem a:hover, .active a:hover {
     background-color: var(--bgc);
-    color: #061539;
+    color: var(--color);
 }
 
 .menuitem a:hover {
     background-color: var(--bgc);
-    color: #061539;
+    color: var(--color);
 }
 
 h1 {
@@ -94,6 +95,11 @@ h3 {
     font-weight: lighter;
 }
 
+th {
+    background-color: var(--color);
+    color: var(--bgc);
+}
+
 .abovefooter {
     margin-left: 20px;
 }
@@ -107,7 +113,7 @@ h3 {
 }
 
 footer {
-    background-color: #061539;
+    background-color: var(--color);
     color: var(--bgc);
     text-align:center; 
     padding: 1em 0em;
