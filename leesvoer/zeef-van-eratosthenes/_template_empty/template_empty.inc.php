@@ -6,8 +6,8 @@
         <h2>Alle delers proberen</h2>
         <p>Om te controleren of een getal een priemgetal is, berekenen we het aantal delers. In onderstaande tabel controleren we de getallen 7, 9 11, 13, 15 en 17.</p>
 
-        <div class="displaygrid">
-            <div style="float:left; padding-right:1em;">
+        <div class="gridlayoutsix">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>7</th>
@@ -35,7 +35,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>9</th>
@@ -69,7 +69,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>11</th>
@@ -109,7 +109,7 @@
                     </tr>
                 </table>
             </div>      
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>13</th>
@@ -155,7 +155,7 @@
                     </tr>
                 </table>
             </div>            
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>15</th>
@@ -207,7 +207,7 @@
                     </tr>
                 </table>
             </div>            
-            <div style="float:left; padding: 0em 1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>17</th>
@@ -265,19 +265,17 @@
                     </tr>
                 </table>
             </div>      
-            <div style="padding: 0em 1em;">
-            </div>   
-            <br clear="all" />   
-            <p style='font-size: 0.7em'>Tabel 1: de getallen delen van 1 tot en met het getal zelf</p>
         </div>
+        <br clear="all" class="brall" />   
+        <p style='font-size: 0.7em'>Tabel 1: de getallen delen van 1 tot en met het getal zelf</p>
                 
         <h2>Later beginnen en eerder eindigen</h2>
         <p>Na het analyseren van tabel 1, is te zien dat 7, 11, 13 en 17 priemgetallen zijn. Deze hebben precies 2 delers. Er valt nog iets op. Zodra het resultaat van de deling onder de twee komt (9 : 5 = 1,8), wordt geen deler meer worden gevonden. Behalve het getal zelf. Daarbij is elk getal deelbaar door 1, deze controle vervalt dus.
         <br />Omdat bekend is of het getal even of oneven is, vervalt het delen door 2. Hierdoor beginnen we niet meer bij 1, maar bij 3. De controles vinden niet meer plaats t/m het getal, maar t/m de helft van het getal. Als de helft geen natuurlijk getal is, ronden we af naar beneden. We delen alleen door natuurlijke getallen en alle resultaten na het delen horen minimaal 2 te zijn. 
         <br />De gegevens in tabel 1 wordt bijgewerkt met de nieuwe informatie, met onderstaande tabel als resultaat.</p>
 
-        <div class="displaygrid">
-            <div style="float:left; padding-right:1em;">
+        <div class="gridlayoutsix">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>7</th>
@@ -287,20 +285,17 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
-                        <th>9</th>
+                        <th>7</th>
                     </tr>
                     <tr>
-                        <td>9 : 3 = 3</td>
-                    </tr>
-                    <tr>
-                        <td>9 : 4 = 2,25</td>
+                        <td>7 : 3 = 2,333</td>
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>11</th>
@@ -316,7 +311,7 @@
                     </tr>
                 </table>
             </div>      
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>13</th>
@@ -335,7 +330,7 @@
                     </tr>
                 </table>
             </div>            
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>15</th>
@@ -357,7 +352,7 @@
                     </tr>
                 </table>
             </div>            
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>17</th>
@@ -382,115 +377,112 @@
                     </tr>
                 </table>
             </div>      
-            <div style="padding: 0em 1em;">
-            </div>   
-            <br clear="all" />   
-            <p style='font-size: 0.7em'>Tabel 2: delers beginnen bij 3 en eindigen voor de helft van het getal</p>
         </div>
+        <br clear="all" class="brall" />   
+        <p style='font-size: 0.7em'>Tabel 2: delers beginnen bij 3 en eindigen voor de helft van het getal</p>
 
         <h2>Een aanname</h2>
         <p>Bij het analyseren van tabel 1 (of 2), valt nog iets op. Het moment dat bewezen wordt dat het getal geen priemgetal is. Een deler is gevonden wanneer de wortel van het getal is bereikt. Neem het getal 9, met als wortel 3. Wanneer we de deler 3 zijn, is bewezen dat het geen priemgetal is. Neem het getal 15, met als wortel 3,873. Ook bij het getal 15 is een deler (3) gevonden wanneer de wortel is bereikt.
         <br />We controleren het getal 2047, met als wortel 45,244. Bij het bereiken van de wortel, horen we te weten of het een priemgetal is. Zie onderstaande tabel met de resultaten.</p>
 
-        <div class="displaygrid">
-            <div style="float:left; padding-right:1em;">
+        <div class="gridaanname">
+            <div class="layoutsix">
                 <table>
-                <tr>
+                    <tr>
                         <td>2047 : 3 = 682,333</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 6 = 341,167</td>
                     </tr>
                     <tr>
                         <td>2047 : 9 = 227,444</td>
                     </tr>
                     <tr>
-                        <td>2047 : 15 = 136,467</td>
-                    </tr>
-                    <tr>
-                        <td>2047 : 21 = 97,476</td>
+                        <td>2047 : 12 = 170,583</td>
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>2047 : 4 = 511,75</td>
                     </tr>
                     <tr>
+                        <td>2047 : 7 = 292,429</td>
+                    </tr>
+                    <tr>
                         <td>2047 : 10 = 204,7</td>
                     </tr>
                     <tr>
-                        <td>2047 : 16 = 127,938</td>
-                    </tr>
-                    <tr>
-                        <td>2047 : 22 = 93,045</td>
+                        <td>2047 : 13 = 157,462</td>
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding: 0em 1em">
+            <div  class="layoutsix verticalline">
                 <table>
                 <tr>
                         <td>2047 : 5 = 409,4</td>
                     </tr>
                     <tr>
+                        <td>2047 : 8 = 255,875</td>
+                    </tr>
+                    <tr>
                         <td>2047 : 11 = 186,091</td>
                     </tr>
                     <tr>
+                        <td>2047 : 14 = 146,214</td>
+                    </tr>
+                </table>
+            </div>      
+            <div class="layoutsix">
+                <table>
+                    <tr>
+                        <td>2047 : 15 = 136,467</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 18 = 113,722</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 21 = 97,476</td>
+                    </tr>
+                </table>
+            </div>            
+            <div class="layoutsix">
+                <table>
+                    <tr>
+                        <td>2047 : 16 = 127,938</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 19 = 107,737</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 22 = 93,045</td>
+                    </tr>
+                </table>
+            </div>            
+            <div class="layoutsix">
+                <table>
+                    <tr>
                         <td>2047 : 17 = 120,412</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 20 = 102,35</td>
                     </tr>
                     <tr>
                         <td>2047 : 23 = 89</td>
                     </tr>
                 </table>
-            </div>      
-            <div style="float:left; padding: 0em 1em">
-                <table>
-                    <tr>
-                        <td>2047 : 6 = 341,167</td>
-                    </tr>
-                    <tr>
-                        <td>2047 : 12 = 170,583</td>
-                    </tr>
-                    <tr>
-                        <td>2047 : 18 = 113,722</td>
-                    </tr>
-                </table>
             </div>            
-            <div style="float:left; padding: 0em 1em">
-                <table>
-                    <tr>
-                        <td>2047 : 7 = 292,429</td>
-                    </tr>
-                    <tr>
-                        <td>2047 : 13 = 157,462</td>
-                    </tr>
-                    <tr>
-                        <td>2047 : 19 = 107,737</td>
-                    </tr>
-                </table>
-            </div>            
-            <div style="padding: 0em 1em">
-                <table>
-                    <tr>
-                        <td>2047 : 8 = 255,875</td>
-                    </tr>
-                    <tr>
-                        <td>2047 : 14 = 146,214</td>
-                    </tr>
-                    <tr>
-                        <td>2047 : 20 = 102,35</td>
-                    </tr>
-                </table>
-            </div>      
         </div>
-        <br clear="all" />
+        <br clear="all" class="brall" />   
         <p style='font-size: 0.7em'>Tabel 3: het vinden van de eerste deler van 2047</p>
-        
         
         <h2>Het bewijs voor de maximale deler</h2>
         <p>Een deler is gevonden wanneer de wortel is bereikt, als het getal geen priemgetal is. Dit valt als volgt te bewijzen. Neem de formule: n = m x l. Met deze formule geldt het volgende: wanneer m groter wordt, wordt l kleiner. En andersom. Stel dat m en l gelijk zijn, dan is de maximale deler is nooit hoger dan de wortel. 
         <br />Stel n is 16, met als wortel 4. In dit geval weten we dat 4 een deler is. Als de wortel niet de deler is, dan moet een van de delers lager (2) of hoger (8) zijn dan deze wortel. De gegevens in tabel 2 passen we aan met de nieuwe informatie en krijgen onderstaande tabel.</p>
 
-        <div class="displaygrid">
-            <div style="float:left; padding-right:1em;">
+        <div class="gridlayoutsix">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>7</th>
@@ -500,7 +492,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>9</th>
@@ -513,7 +505,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>11</th>
@@ -526,7 +518,7 @@
                     </tr>
                 </table>
             </div>      
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>13</th>
@@ -539,7 +531,7 @@
                     </tr>
                 </table>
             </div>            
-            <div style="float:left; padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>15</th>
@@ -552,7 +544,7 @@
                     </tr>
                 </table>
             </div>            
-            <div style="padding: 0em 1em">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <th>17</th>
@@ -565,8 +557,9 @@
                     </tr>
                 </table>
             </div>      
-            <p style='font-size: 0.7em'>Tabel 4: de overgebleven stappen om te bepalen of het een priemgetal is</p>
         </div>
+        <br clear="all" />
+        <p style='font-size: 0.7em'>Tabel 4: de overgebleven stappen om te bepalen of het een priemgetal is</p>
         <p>
             Voor de kleinere priemgetallen hebben we niet veel controles nodig, Voor het getal 7 is zelfs geen controle meer nodig.
         </p>
@@ -574,8 +567,8 @@
         <p>Wanneer het getal niet deelbaar is door 2, moet dan ook gecontroleerd worden of het deelbaar is door 4, 6 of 8? Als het deelbaar is door 2, dan is het een even getal. Hierdoor hoef je niet te controleren of het deelbaar is door andere even getallen. Is het deelbaar is door 4, dan is het ook deelbaar door 2. Hetzelfde geldt voor 6 en 8. Is het deelbaar door 3, dan hoeven we niet te controleren of het ook deelbaar is door 6, 9 of 12. Hierdoor vallen stappen weg. Maar welke blijven over?
         <br />We gebruiken een tabel met de getallen 2 t/m 49. We nemen steeds het eerste getal en filteren de overige delers.</p>
 
-        <div class="displaygrid">
-            <div style="float:left; padding-right:1em;">
+        <div>
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>2</td>
@@ -600,7 +593,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>3</td>
@@ -625,7 +618,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>4</td>
@@ -650,7 +643,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>5</td>
@@ -675,7 +668,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>6</td>
@@ -700,7 +693,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>7</td>
@@ -733,8 +726,8 @@
             We beginnen met 2, waarna we onderstaande tabel krijgen. 
         </p>
 
-        <div class="displaygrid">
-            <div style="float:left; padding-right:1em;">
+        <div>
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>2</strong></td>
@@ -754,7 +747,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>3</td>
@@ -771,7 +764,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>5</td>
@@ -788,7 +781,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>7</td>
@@ -805,7 +798,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>9</td>
@@ -822,7 +815,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>11</td>
@@ -847,8 +840,8 @@
             Het volgende getal is 3, na het filteren ziet de tabel er als volgt uit.
         </p>
 
-        <div class="displaygrid">
-            <div style="float:left; padding-right:1em;">
+        <div>
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>2</strong></td>
@@ -862,7 +855,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>3</strong></td>
@@ -876,7 +869,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>5</td>
@@ -890,7 +883,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>7</td>
@@ -904,7 +897,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>11</td>
@@ -918,7 +911,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>13</td>
@@ -941,8 +934,8 @@
         </p>
 
 
-        <div class="displaygrid">
-            <div style="float:left; padding-right:1em;">
+        <div>
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>2</strong></td>
@@ -956,7 +949,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>3</strong></td>
@@ -970,7 +963,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>5</strong></td>
@@ -984,7 +977,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>7</td>
@@ -998,7 +991,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>11</td>
@@ -1009,7 +1002,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>13</td>
@@ -1028,8 +1021,8 @@
             Het volgende getal is 7, na het filteren ziet de tabel er als volgt uit.
         </p>
 
-        <div class="displaygrid">
-            <div style="float:left; padding-right:1em;">
+        <div>
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>2</strong></td>
@@ -1043,7 +1036,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>3</strong></td>
@@ -1057,7 +1050,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>5</strong></td>
@@ -1071,7 +1064,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td><strong>7</strong></td>
@@ -1082,7 +1075,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>11</td>
@@ -1093,7 +1086,7 @@
                     
                 </table>
             </div>
-            <div style="float:left; padding-right:1em;">
+            <div class="layoutsix">
                 <table>
                     <tr>
                         <td>13</td>
@@ -1104,9 +1097,9 @@
                     
                 </table>
             </div>
-            <br clear="all" />
-            <p style='font-size: 0.7em'>Tabel 9: de overgebleven delers na het filteren met 7</p>
         </div>        
+        <br clear="all" />
+        <p style='font-size: 0.7em'>Tabel 9: de overgebleven delers na het filteren met 7</p>
 
         <h2>Priemgetallen als deler</h2>
         <p>Wat valt op aan de getallen in tabel 9? De overgebleven getallen zijn priemgetallen. Om sneller priemgetallen te vinden, heb je andere priemgetallen nodig. 
