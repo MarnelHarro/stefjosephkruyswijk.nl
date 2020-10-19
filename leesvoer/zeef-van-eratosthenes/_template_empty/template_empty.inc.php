@@ -474,6 +474,81 @@
                 </table>
             </div>            
         </div>
+
+        <div class="gridaanname_layout2">
+            <div class="layoutsix">
+                <table>
+                    <tr>
+                        <td>2047 : 3 = 682,333</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 5 = 409,4</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 7 = 292,429</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 9 = 227,444</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 11 = 186,091</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 13 = 157,462</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 15 = 136,467</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 17 = 120,412</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 19 = 107,737</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 21 = 97,476</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 23 = 89</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="layoutsix">
+                <table>
+                    <tr>
+                        <td>2047 : 4 = 511,75</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 6 = 341,167</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 8 = 255,875</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 10 = 204,7</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 12 = 170,583</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 14 = 146,214</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 16 = 127,938</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 18 = 113,722</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 20 = 102,35</td>
+                    </tr>
+                    <tr>
+                        <td>2047 : 22 = 93,045</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
         <br clear="all" class="brall" />   
         <p style='font-size: 0.7em'>Tabel 3: het vinden van de eerste deler van 2047</p>
         
