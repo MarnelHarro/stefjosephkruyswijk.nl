@@ -24,7 +24,7 @@
 ?>    
 
                 <form action="./" method="post">
-                    <label for="number">Vul getal in: </label> <input type="number" name="number" id="number" min="0" max="4294967295" value="<?php echo $number; ?>" /> <button>Controleer</button>
+                    <label for="number">Getal: </label> <input type="number" name="number" id="number" min="0" max="4294967295" value="<?php echo $number; ?>" /> <button>Controleer</button>
                 </form>
 
                 <?php
@@ -42,6 +42,7 @@
                 <div style="margin-top: 1em">
                     Het getal <?php echo $number; ?> is <?php echo $status; ?> priemgetal
                 </div>
+                <hr style="margin-top: 1em" />
                 
                 <?php
 

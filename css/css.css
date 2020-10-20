@@ -45,7 +45,7 @@
     .gridaanname > div:nth-child(4) {
         padding-left: 1em;
     }
-}
+}   
 
 @media screen and (max-width: 1085px) {
     .gridaanname {
@@ -53,44 +53,12 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .verticalline {
+    .gridaanname .verticalline {
         border-right-color: var(--bgc);
     }    
-
-    h1, h2 {
-        font-weight: bold;
-    }
-}
-
-@media screen and (max-width: 1275px) {
-    body {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 1160px) {
-    body {
-        font-size: 0.86667em;
-    }
-}
-
-@media screen and (max-width: 1045px) {
-    body {
-        font-size: 0.8333em;
-    }
-}
-
-@media screen and (max-width: 940px) {
-    body {
-        font-size: 0.8em;
-    }
 }
 
 @media screen and (max-width: 550px) {
-    #subheader {
-        display: none;
-    }
-
     .gridaanname_layout2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);    

@@ -1,0 +1,13 @@
+.displaygrid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 640px) {
+    .displaygrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .verticalline:nth-child(1) {
+        border-right-color: var(--bgc);
+    }
+}

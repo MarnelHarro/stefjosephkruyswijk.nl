@@ -1,9 +1,11 @@
 
     <div style="padding: 0px 20px">
+        <p>Om te bepalen of een getal een priemgetal is, kan je de Zeef van Eratosthenes gebruiken. Om getallen te controleren kan 'Trial Division' worden gebruikt, hiermee weet je 100% zeker of een getal een priemgetal is. Het nadeel is dat 'Trial Division' is dat het arbeidsintensief is. Om dit proces te versnellen wordt de zeef van Eratosthenes gebruikt. Het controleren vindt niet meer plaats met alle getallen, maar alleen met priemgetallen.</p>
         
+        <h2>Priemgetal</h2>
         <p>Een priemgetal is een natuurlijk getal groter dan 1, met precies twee delers. Het getal 21 heeft als delers 1, 3, 7 en 21. Met vier delers is het geen priemgetal. Het getal 23 heeft als delers 1 en 23. Met twee delers is het wel een priemgetal. Het getal 2 is de eerste priemgetal, met als delers 1 en 2. Omdat 2 een even getal is, zijn alle overige even getallen hierdoor geen priemgetallen. Alle even getallen zijn deelbaar door 2.</p> 
 
-        <h2>Alle delers proberen</h2>
+        <h2>Alle delers proberen (Trial Division)</h2>
         <p>Om te controleren of een getal een priemgetal is, berekenen we het aantal delers. In onderstaande tabel controleren we de getallen 7, 9 11, 13, 15 en 17.</p>
 
         <div class="gridlayoutsix">
@@ -1182,10 +1184,11 @@
         
         <h2>Bronnen</h2>
         <ul>
+            <li>PrimePages, The Prime Glossary: trial division, Retrieved 10:28, October 20, 2020, from <a href='https://primes.utm.edu/glossary/page.php?sort=TrialDivision' target='_blank'>https://primes.utm.edu/glossary/page.php?sort=TrialDivision</a></li>
             <li>Weisstein, Eric W. 'Natural Number.' From MathWorld--A Wolfram Web Resource. <a href='http://mathworld.wolfram.com/NaturalNumber.html' target='_blank'>http://mathworld.wolfram.com/NaturalNumber.html</a></li>
-            <li>Is 1 prime?. Brilliant.org. Retrieved 09:34, February 23, 2019, from <a href='https://brilliant.org/wiki/is-1-prime/' target='_blank'>https://brilliant.org/wiki/is-1-prime/</a></li>
-            <li>Horsley, S (1772). The Sieve of Eratosthenes. Being an Account of His Method of Finding All the Prime Numbers, pp. 327-347</li>
-            <li>O'Neill, M. The Genuine Sieve of Eratosthenes  <a href='https://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf' target='_blank'>https://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf</a></li>
+            <li>Is 1 prime?., Brilliant.org. Retrieved 09:34, February 23, 2019, from <a href='https://brilliant.org/wiki/is-1-prime/' target='_blank'>https://brilliant.org/wiki/is-1-prime/</a></li>
+            <li>Horsley, S (1772)., The Sieve of Eratosthenes. Being an Account of His Method of Finding All the Prime Numbers, pp. 327-347</li>
+            <li>O'Neill, M., The Genuine Sieve of Eratosthenes  <a href='https://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf' target='_blank'>https://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf</a></li>
         </ul>
 
     </div>
