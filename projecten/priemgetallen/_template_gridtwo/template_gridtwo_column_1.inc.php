@@ -24,7 +24,7 @@
 ?>    
 
                 <form action="./" method="post">
-                    <label for="number">Getal: </label> <input type="number" name="number" id="number" min="0" max="4294967295" value="<?php echo $number; ?>" /> <button>Controleer</button>
+                    <label for="number">Vul een getal in: </label> <input type="number" name="number" id="number" min="0" max="4294967295" value="<?php echo $number; ?>" /> <button>Controleer</button>
                 </form>
 
                 <?php

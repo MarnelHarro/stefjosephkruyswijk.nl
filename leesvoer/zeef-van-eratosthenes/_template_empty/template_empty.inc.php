@@ -268,8 +268,7 @@
                 </table>
             </div>      
         </div>
-        <br clear="all" class="brall" />   
-        <p style='font-size: 0.7em'>Tabel 1: de getallen delen van 1 tot en met het getal zelf</p>
+        <span class="textbelow">Tabel 1: de getallen delen van 1 tot en met het getal zelf</span>
                 
         <h2>Later beginnen en eerder eindigen</h2>
         <p>Na het analyseren van tabel 1, is te zien dat 7, 11, 13 en 17 priemgetallen zijn. Deze hebben precies 2 delers. Er valt nog iets op. Zodra het resultaat van de deling onder de twee komt (9 : 5 = 1,8), wordt geen deler meer worden gevonden. Behalve het getal zelf. Daarbij is elk getal deelbaar door 1, deze controle vervalt dus.
@@ -380,8 +379,7 @@
                 </table>
             </div>      
         </div>
-        <br clear="all" class="brall" />   
-        <p style='font-size: 0.7em'>Tabel 2: delers beginnen bij 3 en eindigen voor de helft van het getal</p>
+        <span class="textbelow">Tabel 2: delers beginnen bij 3 en eindigen voor de helft van het getal</span>
 
         <h2>Een aanname</h2>
         <p>Bij het analyseren van tabel 1 (of 2), valt nog iets op. Het moment dat bewezen wordt dat het getal geen priemgetal is. Een deler is gevonden wanneer de wortel van het getal is bereikt. Neem het getal 9, met als wortel 3. Wanneer we de deler 3 zijn, is bewezen dat het geen priemgetal is. Neem het getal 15, met als wortel 3,873. Ook bij het getal 15 is een deler (3) gevonden wanneer de wortel is bereikt.
@@ -550,9 +548,8 @@
                 </table>
             </div>
         </div>
-
-        <br clear="all" class="brall" />   
-        <p style='font-size: 0.7em'>Tabel 3: het vinden van de eerste deler van 2047</p>
+        <br clear="all" />
+        <span class="textbelow">Tabel 3: het vinden van de eerste deler van 2047</span>
         
         <h2>Het bewijs voor de maximale deler</h2>
         <p>Een deler is gevonden wanneer de wortel is bereikt, als het getal geen priemgetal is. Dit valt als volgt te bewijzen. Neem de formule: n = m x l. Met deze formule geldt het volgende: wanneer m groter wordt, wordt l kleiner. En andersom. Stel dat m en l gelijk zijn, dan is de maximale deler is nooit hoger dan de wortel. 
@@ -635,8 +632,7 @@
                 </table>
             </div>      
         </div>
-        <br clear="all" />
-        <p style='font-size: 0.7em'>Tabel 4: de overgebleven stappen om te bepalen of het een priemgetal is</p>
+        <span class="textbelow">Tabel 4: de overgebleven stappen om te bepalen of het een priemgetal is</span>
         <p>
             Voor de kleinere priemgetallen hebben we niet veel controles nodig, Voor het getal 7 is zelfs geen controle meer nodig.
         </p>
@@ -644,539 +640,188 @@
         <p>Wanneer het getal niet deelbaar is door 2, moet dan ook gecontroleerd worden of het deelbaar is door 4, 6 of 8? Als het deelbaar is door 2, dan is het een even getal. Hierdoor hoef je niet te controleren of het deelbaar is door andere even getallen. Is het deelbaar is door 4, dan is het ook deelbaar door 2. Hetzelfde geldt voor 6 en 8. Is het deelbaar door 3, dan hoeven we niet te controleren of het ook deelbaar is door 6, 9 of 12. Hierdoor vallen stappen weg. Maar welke blijven over?
         <br />We gebruiken een tabel met de getallen 2 t/m 49. We nemen steeds het eerste getal en filteren de overige delers.</p>
 
-        <div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>37</td>
-                    </tr>
-                    <tr>
-                        <td>44</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>31</td>
-                    </tr>
-                    <tr>
-                        <td>38</td>
-                    </tr>
-                    <tr>
-                        <td>45</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>32</td>
-                    </tr>
-                    <tr>
-                        <td>39</td>
-                    </tr>
-                    <tr>
-                        <td>46</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                    </tr>
-                    <tr>
-                        <td>33</td>
-                    </tr>
-                    <tr>
-                        <td>40</td>
-                    </tr>
-                    <tr>
-                        <td>47</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>27</td>
-                    </tr>
-                    <tr>
-                        <td>34</td>
-                    </tr>
-                    <tr>
-                        <td>41</td>
-                    </tr>
-                    <tr>
-                        <td>48</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>28</td>
-                    </tr>
-                    <tr>
-                        <td>35</td>
-                    </tr>
-                    <tr>
-                        <td>42</td>
-                    </tr>
-                    <tr>
-                        <td>49</td>
-                    </tr>
-                </table>
-            </div>
-            <br clear="all" />
-            <p style='font-size: 0.7em; '>Tabel 5: de getallen 2 t/m 49 nu nog gebruikt als deler</p>
-        </div>
+        <table class="textcenter">
+            <tr>
+
+        <?php
+            $columnCount = 0;
+            for ($index=2; $index<=49; $index++) {
+                if ($columnCount == 7) {
+                    echo "</tr><tr>";
+                    $columnCount = 0;
+                }
+
+                $columnCount++;
+                echo "<td>$index</td>";
+            }
+        ?>
+
+            </tr>
+        </table>
+        <span class="textbelow textbelowextra">Tabel 5: de getallen 2 t/m 49 nu nog gebruikt als deler</span>
 
         <p>
             We beginnen met 2, waarna we onderstaande tabel krijgen. 
         </p>
 
-        <div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>2</strong></td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>37</td>
-                    </tr>
-                    <tr>
-                        <td>49</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>27</td>
-                    </tr>
-                    <tr>
-                        <td>39</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                    </tr>
-                    <tr>
-                        <td>41</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>31</td>
-                    </tr>
-                    <tr>
-                        <td>43</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>33</td>
-                    </tr>
-                    <tr>
-                        <td>45</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>35</td>
-                    </tr>
-                    <tr>
-                        <td>47</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <br clear="all" />
-            <p style='font-size: 0.7em'>Tabel 6: de overgebleven delers na het filteren met 2</p>
-        </div>
+        <table class="textcenter">
+            <tr>
+
+        <?php
+            $columnCount = 0;
+            for ($index=2; $index<=49; $index++) {
+                if ($index > 2 && $index % 2 == 0) {
+                    continue;
+                }
+
+                if ($columnCount == 7) {
+                    echo "</tr><tr>";
+                    $columnCount = 0;
+                }
+
+                $columnCount++;
+                $text = $index;
+                switch ($index) {
+                    case 2:
+                        $text = "<span class='selectedcell'>$index</span>";
+                        break;
+                }
+                echo "<td>$text</td>";
+            }
+        ?>
+
+            </tr>
+        </table>
+
+        <span class="textbelow textbelowextra">Tabel 6: de overgebleven delers na het filteren met 2</span>
 
         <p>
             Het volgende getal is 3, na het filteren ziet de tabel er als volgt uit.
         </p>
 
-        <div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>2</strong></td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                        <td>35</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>3</strong></td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>37</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>41</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>43</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                    </tr>
-                    <tr>
-                        <td>47</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>31</td>
-                    </tr>
-                    <tr>
-                        <td>49</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <br clear="all" />
-            <p style='font-size: 0.7em'>Tabel 7: de overgebleven delers na het filteren met 3</p>
-        </div>
+        <table class="textcenter">
+            <tr>
+
+        <?php
+            $columnCount = 0;
+            for ($index=2; $index<=49; $index++) {
+                if ($index > 2 && $index % 2 == 0) {
+                    continue;
+                }
+                if ($index > 3 && $index % 3 == 0) {
+                    continue;
+                }
+
+                if ($columnCount == 7) {
+                    echo "</tr><tr>";
+                    $columnCount = 0;
+                }
+
+                $columnCount++;
+                $text = $index;
+                switch ($index) {
+                    case 2:
+                    case 3:
+                        $text = "<span class='selectedcell'>$index</span>";
+                        break;
+                }
+                echo "<td>$text</td>";
+            }
+        ?>
+
+            </tr>
+        </table>
+
+        <span class="textbelow textbelowextra">Tabel 7: de overgebleven delers na het filteren met 3</span>
 
         <p>
             Het volgende getal is 5, na het filteren ziet de tabel er als volgt uit.
         </p>
 
+        <table class="textcenter">
+            <tr>
 
-        <div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>2</strong></td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                        <td>41</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>3</strong></td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>43</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>5</strong></td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>47</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                    </tr>
-                    <tr>
-                        <td>49</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>31</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>37</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <br clear="all" />
-            <p style='font-size: 0.7em'>Tabel 8: de overgebleven delers na het filteren met 5</p>
-        </div>        
+        <?php
+            $columnCount = 0;
+            for ($index=2; $index<=49; $index++) {
+                if ($index > 2 && $index % 2 == 0) {
+                    continue;
+                }
+                if ($index > 3 && $index % 3 == 0) {
+                    continue;
+                }
+                if ($index > 5 && $index % 5 == 0) {
+                    continue;
+                }
+
+                if ($columnCount == 7) {
+                    echo "</tr><tr>";
+                    $columnCount = 0;
+                }
+
+                $columnCount++;
+                $text = $index;
+                switch ($index) {
+                    case 2:
+                    case 3:
+                    case 5:
+                        $text = "<span class='selectedcell'>$index</span>";
+                        break;
+                }
+                echo "<td>$text</td>";
+            }
+        ?>
+
+            </tr>
+        </table>   
+
+        <span class="textbelow textbelowextra">Tabel 8: de overgebleven delers na het filteren met 5</span>
 
         <p>
             Het volgende getal is 7, na het filteren ziet de tabel er als volgt uit.
         </p>
 
-        <div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>2</strong></td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                        <td>41</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>3</strong></td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>43</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>5</strong></td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>47</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td><strong>7</strong></td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>31</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="layoutsix">
-                <table>
-                    <tr>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>37</td>
-                    </tr>
-                    
-                </table>
-            </div>
-        </div>        
-        <br clear="all" />
-        <p style='font-size: 0.7em'>Tabel 9: de overgebleven delers na het filteren met 7</p>
+        <table class="textcenter">
+            <tr>
+
+        <?php
+            $columnCount = 0;
+            for ($index=2; $index<=49; $index++) {
+                if ($index > 2 && $index % 2 == 0) {
+                    continue;
+                }
+                if ($index > 3 && $index % 3 == 0) {
+                    continue;
+                }
+                if ($index > 5 && $index % 5 == 0) {
+                    continue;
+                }
+                if ($index > 7 && $index % 7 == 0) {
+                    continue;
+                }
+
+                if ($columnCount == 7) {
+                    echo "</tr><tr>";
+                    $columnCount = 0;
+                }
+
+                $columnCount++;
+                $text = $index;
+                switch ($index) {
+                    case 2:
+                    case 3:
+                    case 5:
+                    case 7:
+                        $text = "<span class='selectedcell'>$index</span>";
+                        break;
+                }
+                echo "<td>$text</td>";
+            }
+        ?>
+
+            </tr>
+        </table> 
+        <span class="textbelow textbelowextra">Tabel 9: de overgebleven delers na het filteren met 7</span>
 
         <h2>Priemgetallen als deler</h2>
         <p>Wat valt op aan de getallen in tabel 9? De overgebleven getallen zijn priemgetallen. Om sneller priemgetallen te vinden, heb je andere priemgetallen nodig. 

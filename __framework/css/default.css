@@ -111,6 +111,44 @@ th {
     text-decoration: none;
 }
 
+.textbelow {
+    display: block;
+    font-size: 0.9em;
+}
+
+.textbelowextra {
+    padding-top: 1em;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+button,input[type=button],[type=reset],input[type=search],input[type=submit],input[type=text],input[type=number] {
+    border:1px solid #000;
+    color: var(--color);
+    font-family:verdana;
+    font-size:1.1em;
+    padding:0.5em;
+}
+
+input::placeholder {
+    color:#C4CBDC;
+}
+
+table, th, tr, td {
+    border: 1px solid var(--color);
+    border-collapse: collapse;
+    padding: 0.3em;
+}
+
+.selectedcell {
+    background-color: var(--color);
+    color: var(--bgc);
+    display: block; 
+    font-weight: bold;
+}
+
 .abovefooter {
     margin: 0px 20px;
 }
@@ -154,6 +192,10 @@ footer a {
     #subheader {
         display: none;
     }
+
+    h2, h3 {
+        font-weight: bolder;
+    }    
 }
 
 

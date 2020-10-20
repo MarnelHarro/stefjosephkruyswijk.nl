@@ -18,18 +18,6 @@
     padding-right: 15px;
 }
 
-button,input[type=button],[type=reset],input[type=search],input[type=submit],input[type=text],input[type=number] {
-    border:1px solid #000;
-    color:#061539;
-    font-family:verdana;
-    font-size:1.1em;
-    padding:0.5em;
-}
-
-input::placeholder {
-    color:#C4CBDC;
-}
-
 @media screen and (max-width: 1015px) {
     .displaygrid {
         grid-template-columns: repeat(1, 1fr);
