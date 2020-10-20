@@ -42,7 +42,7 @@
                 <div style="margin-top: 1em">
                     Het getal <?php echo $number; ?> is <?php echo $status; ?> priemgetal
                 </div>
-                <hr style="margin-top: 1em" />
+                <hr style="margin-top: 1em; margin-bottom: 1em;" />
                 
                 <?php
 
@@ -130,7 +130,7 @@
                             
                             echo substr($string, 0, -3);                            
 
-                            echo "<hr />";
+                            echo "<hr style=\"margin-top: 1em; margin-bottom: 1em;\" />";
                         }
                     }
 
