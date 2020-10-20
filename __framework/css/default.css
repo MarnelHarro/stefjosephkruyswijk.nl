@@ -149,6 +149,20 @@ table, th, tr, td {
     font-weight: bold;
 }
 
+.dialog {
+    position: absolute;
+    top: 50px;
+    width: 90%;
+}
+
+.dialog a {
+    text-decoration: underline;
+}
+
+.dialog a:hover {
+    text-decoration: none;
+}
+
 .abovefooter {
     margin: 0px 20px;
 }
@@ -193,7 +207,7 @@ footer a {
         display: none;
     }
 
-    h2, h3 {
+    h1, h2, h3 {
         font-weight: bolder;
     }    
 }
