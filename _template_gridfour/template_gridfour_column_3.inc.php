@@ -2,6 +2,8 @@
 
     $links = array();
 
+    $links["/leesvoer/het-vermoeden-van-goldbach/"] = "Het vermoeden van Goldbach";
+    $links["/leesvoer/hoofdstelling-van-de-rekenkunde/"] = "Hoofdstelling van de rekenkunde";
     $links["/leesvoer/zeef-van-eratosthenes/"] = "Zeef van Eratosthenes";
 
     asort($links);

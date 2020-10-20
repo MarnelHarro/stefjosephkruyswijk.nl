@@ -129,7 +129,7 @@ button,input[type=button],[type=reset],input[type=search],input[type=submit],inp
     border:1px solid #000;
     color: var(--color);
     font-family:verdana;
-    font-size:1.1em;
+    font-size:1em;
     padding:0.5em;
 }
 
@@ -195,7 +195,7 @@ footer a {
 
 @media screen and (max-width: 1024px) {
     body {
-        font-size: 0.95em;
+        font-size: 1.17em;
     }
 }
 
