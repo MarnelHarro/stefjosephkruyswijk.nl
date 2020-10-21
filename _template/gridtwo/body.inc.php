@@ -13,31 +13,35 @@
 
                 $columnIndex = 1;
 
-                foreach ($templatesettings["grid"] as $key => $value) {
-                    
-                    $class="";
+                if ($templatesettings["grid"]) {
 
-                    if ($columnIndex < 2) {
-                        $class=" class='verticalline'";
+                    foreach ($templatesettings["grid"] as $key => $value) {
+                    
+                        $class="";
+    
+                        if ($columnIndex < 2) {
+                            $class=" class='verticalline'";
+                        }
+    
+                        echo "<div$class>";
+                        
+                        if (!empty($value)) {                    
+                            $header = "<h2>$value</h2>"; 
+                            if (empty($key) || is_int($key)) {
+                                echo $header;
+                            }
+                            else {
+                                echo "<a href='" . $key . "'>$header</a>";
+                            }
+                        }
+    
+                        include "_template_gridtwo/template_gridtwo_column_$columnIndex.inc.php";
+    
+                        echo "</div>";
+    
+                        $columnIndex++;
                     }
 
-                    echo "<div$class>";
-                    
-                    if (!empty($value)) {                    
-                        $header = "<h2>$value</h2>"; 
-                        if (empty($key) || is_int($key)) {
-                            echo $header;
-                        }
-                        else {
-                            echo "<a href='" . $key . "'>$header</a>";
-                        }
-                    }
-
-                    include "_template_gridtwo/template_gridtwo_column_$columnIndex.inc.php";
-
-                    echo "</div>";
-
-                    $columnIndex++;
                 }
 
             ?>

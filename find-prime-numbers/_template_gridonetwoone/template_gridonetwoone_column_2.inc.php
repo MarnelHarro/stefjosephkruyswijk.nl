@@ -1,15 +1,19 @@
 
 <script>
 
+    /*
+
     setTimeout(() => {
         location.reload();
     }, 1000 * 60 * 16);
+
+    */
 
 </script>
 
 <?php
 
-    set_time_limit(900); 
+    // set_time_limit(900); 
 
     function getFactors($number) {
         $array = array();
@@ -157,6 +161,11 @@
             }
     }
 
+    $primes = getPrimeArray(1);
+
+    print_r($primes);
+
+    /*
     $byte = FUNCTIONS::getQueryString("byte");
 
     $maxNumber = pow(BYTE, $byte) - CORRECTION;
@@ -267,5 +276,6 @@
             $index += 2;
         }        
     }
+    */
 
 ?>

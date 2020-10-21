@@ -3,7 +3,23 @@
     $number = FUNCTIONS::getPost("number");
     $isPrime = null;
 
-    if ($number > 0) {
+    $maxInteger = 0;
+
+    $byte = 4;
+    while ($maxInteger == 0) {
+        $query = "select max(number) as number from " . TABLE . $byte;
+        $maxArray = Data::executeSelectQuery($query);    
+
+        if (isset($maxArray[0]["number"])) {
+            $maxInteger = $maxArray[0]["number"];
+        }
+
+        $byte--;
+    }
+
+    $isValid = ($number > 0) && ($number < $maxInteger);
+
+    if ($isValid) {
         $byte = 1;
         if ($number < BYTE) {
             $byte = 1;
@@ -13,6 +29,9 @@
         }
         else if ($number < BYTE * BYTE * BYTE) {
             $byte = 3;
+        }
+        else if ($number < BYTE * BYTE * BYTE * BYTE) {
+            $byte = 4;
         }
         
         $query = "select number from prime_byte_" . $byte . " where number=$number";
@@ -25,7 +44,7 @@
 
                 <br />
                 <form action="./" method="post">
-                    <label for="number">Vul een getal in: </label> <input type="number" name="number" id="number" min="0" max="4294967295" value="<?php echo $number; ?>" /> <button>Controleer</button>
+                    <label for="number">Voer </label> <input type="number" name="number" id="number" value="<?php echo $number; ?>" placeholder="een getal in" /> <button>Controleer</button>
                 </form>
 
                 <?php
@@ -47,6 +66,18 @@
                 
                 <?php
 
+                    }
+
+                    if (!$isValid) {
+                ?>
+
+                <hr style="margin-top: 1.5em" />
+                <div style="margin-top: 1em">
+                    Vul een getal in tussen 1 en <?php echo $maxInteger; ?>.
+                </div>
+                <hr style="margin-top: 1em" />
+
+                <?php
                     }
 
                 ?>
