@@ -7,7 +7,7 @@
     $defaultTimeZone = "Europe/Amsterdam";
     $googleAnalytics = ""; // UA=123456789-0
     $htmlLanguage = "en";
-    $showErrors = true;
+    $showErrors = false;
     $title = "Prototype";
     $useDefaultLayout = true;
 

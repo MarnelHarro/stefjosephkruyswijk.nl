@@ -10,7 +10,7 @@
          */            
         private function getConnection() {
             
-            $config = parse_ini_file("../../_includes/db.ini"); 
+            $config = parse_ini_file(DOCUMENT_ROOT . "_includes/db.ini");   
             $connection = mysqli_connect($config["server"], $config["username"], $config["password"], $config["database"]);
         
             if($connection === false) {
