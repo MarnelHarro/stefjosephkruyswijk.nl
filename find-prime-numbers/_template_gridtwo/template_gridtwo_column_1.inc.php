@@ -159,8 +159,22 @@
 
     while ($index <= $maxNumber) {
         $isPrime = true;
+        $squareroot = floor(sqrt($index));
+
+        if (ISLOCALHOST) {
+            echo "<br />$index: ";
+        }
 
         foreach ($primes as $item) {
+            // only check when the number is smaller than the squareroot
+            if ($item > $squareroot) {
+                break;
+            }
+
+            if (ISLOCALHOST) {
+                echo " $item";
+            }
+
             if ($index % $item == 0) {
                 $isPrime = false;
                 break;
