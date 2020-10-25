@@ -2,6 +2,7 @@
 
     $templateini = parse_ini_file("template.ini");
     $settings = parse_ini_file("settings.ini");
+
     include 'settings.inc.php';    
     include 'template.inc.php';   
     include 'init.inc.php';

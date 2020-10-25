@@ -268,6 +268,9 @@
                 </table>
             </div>      
         </div>
+        <div class="breakrule">
+            <br clear="all" />
+        </div>
         <span class="textbelow">Tabel 1: de getallen delen van 1 tot en met het getal zelf</span>
                 
         <h2>Later beginnen en eerder eindigen</h2>
@@ -378,6 +381,9 @@
                     </tr>
                 </table>
             </div>      
+        </div>
+        <div class="breakrule">
+            <br clear="all" />
         </div>
         <span class="textbelow">Tabel 2: delers beginnen bij 3 en eindigen voor de helft van het getal</span>
 
@@ -548,6 +554,9 @@
                 </table>
             </div>
         </div>
+        <div class="breakrule">
+            <br clear="all" />
+        </div>
         <br clear="all" />
         <span class="textbelow">Tabel 3: het vinden van de eerste deler van 2047</span>
         
@@ -632,6 +641,9 @@
                 </table>
             </div>      
         </div>
+        <div class="breakrule">
+            <br clear="all" />
+        </div>
         <span class="textbelow">Tabel 4: de overgebleven stappen om te bepalen of het een priemgetal is</span>
         <p>
             Voor de kleinere priemgetallen hebben we niet veel controles nodig, Voor het getal 7 is zelfs geen controle meer nodig.
@@ -692,7 +704,9 @@
 
             </tr>
         </table>
-
+        <div class="breakrule">
+            <br clear="all" />
+        </div>
         <span class="textbelow textbelowextra">Tabel 6: de overgebleven delers na het filteren met 2</span>
 
         <p>
@@ -731,7 +745,9 @@
 
             </tr>
         </table>
-
+        <div class="breakrule">
+            <br clear="all" />
+        </div>
         <span class="textbelow textbelowextra">Tabel 7: de overgebleven delers na het filteren met 3</span>
 
         <p>
@@ -774,7 +790,9 @@
 
             </tr>
         </table>   
-
+        <div class="breakrule">
+            <br clear="all" />
+        </div>
         <span class="textbelow textbelowextra">Tabel 8: de overgebleven delers na het filteren met 5</span>
 
         <p>
@@ -821,6 +839,9 @@
 
             </tr>
         </table> 
+        <div class="breakrule">
+            <br clear="all" />
+        </div>
         <span class="textbelow textbelowextra">Tabel 9: de overgebleven delers na het filteren met 7</span>
 
         <h2>Priemgetallen als deler</h2>
