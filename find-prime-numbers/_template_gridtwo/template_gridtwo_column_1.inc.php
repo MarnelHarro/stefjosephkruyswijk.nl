@@ -34,7 +34,7 @@
     */
 
     function getPrimeArray() {
-        $query = "select number from " . PRIME_TABLE;
+        $query = "select number from " . PRIME_TABLE . " where number < " . (BYTE * BYTE);
         $numberArray = Data::executeSelectQuery($query);        
 
         $array = array();
@@ -44,6 +44,19 @@
         }
 
         return $array;
+    }
+
+    function getMaxPrimeNumber() {
+        $query = "select max(number) as number from " . PRIME_TABLE;
+        $numberArray = Data::executeSelectQuery($query);        
+
+        $max = 0;
+
+        foreach ($numberArray as $item) {
+            $max = $item["number"];
+        }
+
+        return $max;
     }
 
     function isPrime($number) {
@@ -145,7 +158,7 @@
         }
     }
 
-    $index = $primes[count($primes) - 1];
+    $index = getMaxPrimeNumber();
     $maxNumber = pow($index, 2);
     $index += 2;
 
