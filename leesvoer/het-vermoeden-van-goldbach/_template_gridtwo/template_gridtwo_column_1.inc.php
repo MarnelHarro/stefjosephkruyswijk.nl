@@ -30,21 +30,7 @@
                             $minus = $number - $fraction;
                             $isPrime = false;
 
-                            $byte = 1;
-                            if ($minus < BYTE) {
-                                $byte = 1;
-                            }
-                            else if ($minus < BYTE * BYTE) {
-                                $byte = 2;
-                            }
-                            else if ($minus < BYTE * BYTE * BYTE) {
-                                $byte = 3;
-                            }
-                            else if ($minus < BYTE * BYTE * BYTE * BYTE) {
-                                $byte = 4;
-                            }
-
-                            $query = "select number from prime_byte_$byte where number = $minus"; 
+                            $query = "select number from " . PRIME_TABLE . " where number = $minus"; 
                             $temp = Data::executeSelectQuery($query);
 
                             foreach ($temp as $row) {

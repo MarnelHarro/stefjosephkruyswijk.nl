@@ -14,8 +14,8 @@
         else if ($number < BYTE * BYTE * BYTE) {
             $byte = 3;
         }
-        
-        $query = "select number from prime_byte_" . $byte . " where number=$number";
+
+        $query = "select max(number) as number from " . PRIME_TABLE . " where number=$number";
         $rows = Data::executeSelectQuery($query);
 
         $isPrime = sizeof($rows) ? true : false;
@@ -52,7 +52,7 @@
                     if (($isPrime or !$isPrime) and $number > 1) {
                         $sqrt = floor(sqrt($number));
 
-                        $query = "select number from " . TABLE . "1 where number <= $sqrt";  
+                        $query = "select number from " . PRIME_TABLE . " where number <= $sqrt";  
                         $rows = Data::executeSelectQuery($query);
 
                         $fractions = array();
@@ -67,25 +67,6 @@
 
                                     $number /= $fraction;
                                     $index--;
-                                }
-                            }
-                        }
-
-                        if ($number > BYTE) {
-                            $query = "select number from " . TABLE . "2 where number <= $number";  
-                            $rows = Data::executeSelectQuery($query);
-    
-                            $countRows = count($rows);
-                            for ($index=0; $index < $countRows; $index++) {
-                                $fraction = $rows[$index]["number"];
-    
-                                if ($number % $fraction == 0) {
-                                    if ($fraction > 2) {
-                                        $fractions[] = $fraction;
-    
-                                        $number /= $fraction;
-                                        $index--;
-                                    }
                                 }
                             }
                         }
